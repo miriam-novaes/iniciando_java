@@ -6,7 +6,7 @@ public class triangulo {
   public static void main(String[] args) {
     Scanner leitor = new Scanner(System.in);
 
-    int menor1 = 0;
+    int menor = 0;
     int medio = 0;
     int maior = 0;
     
@@ -42,15 +42,15 @@ public class triangulo {
      }
       
     
-     if (maior < (menor1 + medio)) {
-         if (maior == menor1 && maior == medio ) {
+     if (maior < (menor + medio)) {
+         if (maior == menor && maior == medio ) {
           System.out.println("Triângulo Equilátero: aquele que tem os comprimentos dos três lados iguais");
          } else
-           if (maior == menor1 || menor1 == medio || medio == maior) {
+           if (maior == menor || menor == medio || medio == maior) {
              System.out.println("Triângulo Isóscele: aquele que tem os comprimentos de dois lados iguais.");
               System.out.println("Triângulo equilátero é também isóscele");
            } else 
-           if(maior != menor1 && menor1 != medio && medio != maior) {
+           if(maior != menor && menor != medio && medio != maior) {
              System.out.println("Triângulo Escaleno: aquele que tem os comprimentos de seus três lados diferentes");
            }
      } else {
